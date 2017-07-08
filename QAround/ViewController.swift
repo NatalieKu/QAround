@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var btn: [UIButton]!
     
-    @IBOutlet weak var playagain: UIButton!
     
     
     
@@ -62,7 +61,6 @@ class ViewController: UIViewController {
         if questionCount == 10
         {
             show_alertController()
-            playagain.isHidden = false
             
         }
         else
@@ -74,13 +72,14 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func playAgain(_ sender: Any)
+  /*  @IBAction func playAgain(_ sender: Any)
     {
         initialize()
         showQuestion()
         playagain.isHidden = true
         
     }
+*/
     
     override func viewDidLoad()
     {
@@ -119,10 +118,14 @@ class ViewController: UIViewController {
             preferredStyle: .alert)
         
         
-        let okAction = UIAlertAction(title: "確認",
+        let okAction = UIAlertAction(title: "再戰江湖",
                                      style: .default,
                                      handler:{
                                         (action: UIAlertAction!) -> Void in
+                                        self.questionNumber.removeAll()
+                                        self.initialize()
+                                        self.showQuestion()
+                                        
         })
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)

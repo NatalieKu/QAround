@@ -83,17 +83,6 @@
                                     <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQf-UE-sId"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMj-CI-sYa">
-                                <rect key="frame" x="251" y="669" width="91" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="再戰江湖">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Nw-C4-ja2"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-xq-9Qh">
                                 <rect key="frame" x="119" y="148" width="198" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -113,7 +102,6 @@
                     </view>
                     <connections>
                         <outlet property="myPic" destination="Ogt-SU-zfH" id="del-8L-Gie"/>
-                        <outlet property="playagain" destination="lMj-CI-sYa" id="oiu-zp-B4G"/>
                         <outlet property="questionLabel" destination="5en-Qi-JTs" id="lmZ-qg-GIV"/>
                         <outlet property="questionNum" destination="Qpa-xq-9Qh" id="XuO-78-Zzu"/>
                         <outlet property="scoreLabel" destination="ZeK-XJ-WkT" id="C5R-Ve-H0W"/>
