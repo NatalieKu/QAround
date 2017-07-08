@@ -65,30 +65,22 @@ class ViewController: UIViewController {
         }
         else
         {
-            showQuestion()
+            newQuestion()
             
             
         }
         
     }
     
-  /*  @IBAction func playAgain(_ sender: Any)
-    {
-        initialize()
-        showQuestion()
-        playagain.isHidden = true
-        
-    }
-*/
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        showQuestion()
+        newQuestion()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func showQuestion()
+    func newQuestion()
     {
         questionCount = questionCount + 1
         let random_number = Int(arc4random_uniform(UInt32(questionNumber.count)))
@@ -124,7 +116,7 @@ class ViewController: UIViewController {
                                         (action: UIAlertAction!) -> Void in
                                         self.questionNumber.removeAll()
                                         self.initialize()
-                                        self.showQuestion()
+                                        self.newQuestion()
                                         
         })
         alertController.addAction(okAction)
