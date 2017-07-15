@@ -312,6 +312,7 @@
 				E05F182D1F10A47000B12F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
